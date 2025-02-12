@@ -28,12 +28,11 @@ export function SearchModeToggle() {
       onPressedChange={handleSearchModeChange}
       variant="outline"
       className={cn(
-        'gap-1 px-3 border border-input text-muted-foreground bg-glass/30 backdrop-blur-sm',
-        'data-[state=on]:bg-neon-blue/10',
-        'data-[state=on]:text-neon-blue',
-        'data-[state=on]:border-neon-blue/50',
-        'data-[state=on]:shadow-[0_0_10px_rgba(0,243,255,0.3)]',
-        'hover:bg-glass/50 hover:text-neon-blue rounded-full transition-all duration-300'
+        'gap-1 px-3 border border-input text-muted-foreground bg-background',
+        'data-[state=on]:bg-accent-blue',
+        'data-[state=on]:text-accent-blue-foreground',
+        'data-[state=on]:border-accent-blue-border',
+        'hover:bg-accent hover:text-accent-foreground rounded-full'
       )}
     >
       <Globe className="size-4" />
