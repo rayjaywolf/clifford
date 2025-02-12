@@ -64,16 +64,6 @@ const config = {
           '3': 'hsl(var(--chart-3))',
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))'
-        },
-        // Add new futuristic colors
-        neon: {
-          blue: '#00f3ff',
-          purple: '#8b5cf6',
-          pink: '#ff00ff'
-        },
-        glass: {
-          DEFAULT: 'rgba(255, 255, 255, 0.1)',
-          dark: 'rgba(0, 0, 0, 0.1)'
         }
       },
       borderRadius: {
@@ -97,36 +87,14 @@ const config = {
           to: {
             height: '0'
           }
-        },
-        // Add new animation
-        glow: {
-          '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '0.5' }
-        },
-        float: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-10px)' }
         }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out',
-        // Add new animation
-        glow: 'glow 2s ease-in-out infinite',
-        float: 'float 3s ease-in-out infinite'
+        'accordion-up': 'accordion-up 0.2s ease-out'
       },
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans]
-      },
-      // Add backdrop blur variants
-      backdropBlur: {
-        xs: '2px'
-      },
-      // Add gradient backgrounds
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
       }
     }
   },

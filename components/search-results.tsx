@@ -32,12 +32,12 @@ export function SearchResults({ results }: SearchResultsProps) {
       {displayedResults.map((result, index) => (
         <div className="w-1/2 md:w-1/4 p-1" key={index}>
           <Link href={result.url} passHref target="_blank">
-            <Card className="flex-1 h-full backdrop-blur-sm bg-glass/30 border-neon-blue/20 hover:border-neon-blue/50 transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,243,255,0.3)] overflow-hidden">
-              <CardContent className="p-2 flex flex-col justify-between h-full relative">
-                <p className="text-xs line-clamp-2 min-h-[2rem] z-10">
+            <Card className="flex-1 h-full">
+              <CardContent className="p-2 flex flex-col justify-between h-full">
+                <p className="text-xs line-clamp-2 min-h-[2rem]">
                   {result.title || result.content}
                 </p>
-                <div className="mt-2 flex items-center space-x-1 z-10">
+                <div className="mt-2 flex items-center space-x-1">
                   <Avatar className="h-4 w-4">
                     <AvatarImage
                       src={`https://www.google.com/s2/favicons?domain=${
